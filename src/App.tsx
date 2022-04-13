@@ -2,6 +2,9 @@ import styles from './App.module.css';
 import poweredImage from './assets/powered.png'
 
 const App=()=>{
+  const [heightField]
+
+
   return(
     <div className={styles.main}>
 
@@ -14,7 +17,15 @@ const App=()=>{
       <div className={styles.container}>
 
           <div className={styles.leftside}>
-            ...
+            <h1>Calcule o seu IMC</h1>
+            <p>Para calcular o IMC (Índice de Massa Corporal), basta preencher os campos abaixo.</p>
+          
+            <input
+              type="number"
+              placeholder="Digite aqui a sua altura. Ex: 1.5 (Em metros) "
+              value={}
+              onChange={}
+            />
           </div>
           <div className={styles.rightside}>
             ...
