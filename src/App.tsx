@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import styles from './App.module.css';
 import poweredImage from './assets/powered.png'
 
 const App=()=>{
-  const [heightField]
+  const [heightField,setHeightField]=useState<number>(0);
+  const [weightField,setWeightField]=useState<number>(0);
 
 
   return(
@@ -23,9 +25,19 @@ const App=()=>{
             <input
               type="number"
               placeholder="Digite aqui a sua altura. Ex: 1.5 (Em metros) "
-              value={}
-              onChange={}
+              value={heightField>0? heightField:''}
+              onChange={e=>setHeightField(parseFloat(e.target.value))}
+              
             />
+
+            <input
+              type="number"
+              placeholder="Digite aqui o seu peso. Ex: 73.5 (Em Kg) "
+              value={weightField>0? weightField:''}
+              onChange={e=>setWeightField(parseFloat(e.target.value))}
+              
+            />
+
           </div>
           <div className={styles.rightside}>
             ...
