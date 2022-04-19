@@ -21,12 +21,12 @@ body{
 
 .container .leftside{
     flex: 1;
-    background-color: aqua;
+    background-color: rgb(208, 249, 249);
     margin-right: 40px;
 }
 
 .container .rightside{
     flex: 1;
-    background-color: greenyellow;
+    background-color: rgb(240, 253, 220);
     margin-left: 40px;
 }
